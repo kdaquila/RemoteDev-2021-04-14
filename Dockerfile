@@ -9,5 +9,5 @@ WORKDIR /src/app
 
 RUN npm install
 
-CMD node ./bin/www && \
+CMD pm2 ./bin/www && \
     tail -f /dev/null
