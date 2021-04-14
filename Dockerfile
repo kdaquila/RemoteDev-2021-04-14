@@ -10,5 +10,5 @@ WORKDIR /src/app
 RUN npm install && \
     npm install pm2 -g
 
-CMD pm2 ./bin/www && \
+CMD pm2 start ./bin/www && \
     tail -f /dev/null
