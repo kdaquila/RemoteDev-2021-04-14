@@ -1,7 +1,7 @@
 FROM node:lts-buster
 
-RUN apt update && \
-    apt install git
+RUN apt-get update && \
+    apt-get install git
 
 RUN git clone https://github.com/kdaquila/RemoteDev-2021-04-14.git src
 
